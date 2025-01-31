@@ -31,7 +31,7 @@ test("has title", async ({ page }) => {
   await download.saveAs("download/samplefile.csv");
 
   await page.goto(
-    "https://chandrudemo.sharepoint.com/sites/test-v/Test%20Folder/Forms/AllItems.aspx?npsAction=createList"
+    "https://chandrudemo.sharepoint.com/sites/test-v/Test%20Folder/Forms/AllItems.aspx"
   );
   await page
     .getByPlaceholder("Email, phone, or Skype")
