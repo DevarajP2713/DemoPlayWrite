@@ -39,6 +39,7 @@ test("has title", async ({ page }) => {
   await page.getByRole("button", { name: "Next" }).click();
   await page.getByPlaceholder("Password").fill("Vudu898529");
   await page.getByRole("button", { name: "Sign in" }).click();
+  await page.getByRole("button", { name: "Yes" }).click();
 
   await page.getByLabel("Upload").click();
 
